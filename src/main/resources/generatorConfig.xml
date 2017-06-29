@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	<classPathEntry location="C:\Users\Administrator\.m2\repository\mysql\mysql-connector-java\5.1.34\mysql-connector-java-5.1.34.jar" />
+
+	<context id="social" targetRuntime="MyBatis3">
+		<commentGenerator>
+			<property name="suppressDate" value="ture"/>
+            <property name="suppressAllComments" value="true"/>
+		</commentGenerator>
+	    
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver" 
+		    connectionURL="jdbc:mysql://192.168.32.32:3306/social" 
+		    userId="wiki" 
+		    password="ytjiyufei">
+		</jdbcConnection>
+		
+		<javaModelGenerator targetPackage="com.jiyufei.social.bean" targetProject="D:\workspace\Spring\social\src\main\java">
+			<property name="enableSubPackages" value="false" />
+			<property name="trimStrings" value="false" />
+		</javaModelGenerator>
+		
+		<sqlMapGenerator targetPackage="mapper"  targetProject="D:\workspace\Spring\social\src\main\resources">
+			<property name="enableSubPackages" value="false" />
+		</sqlMapGenerator>
+
+		<javaClientGenerator type="XMLMAPPER" targetPackage="com.jiyufei.social.dao"  targetProject="D:\workspace\Spring\social\src\main\java">
+			<property name="enableSubPackages" value="false" />
+		</javaClientGenerator>
+
+		<table tableName="sd_7k7k"></table>
+		<table tableName="sd_163"></table>
+		<table tableName="sd_12306"></table>
+		<table tableName="sd_17173"></table>
+		<table tableName="sd_csdn"></table>
+		<table tableName="sd_index_char1"></table>
+		<table tableName="sd_index_char2"></table>
+		<table tableName="sd_index_char4"></table>
+		<table tableName="sd_index_num"></table>
+		<table tableName="sd_other"></table>
+		<table tableName="sd_renren"></table>
+		<table tableName="sd_weibo"></table>
+		<table tableName="sd_zhenai"></table>
+		<table tableName="login_user"></table>
+		<table tableName="social_record"></table>
+		<table tableName="social_history"></table>
+		<table tableName="social_count"></table>
+		<table tableName="wy_drops"></table>
+		<table tableName="wy_count"></table>
+		<table tableName="wy_history"></table>
+	</context>
+	
+	
+</generatorConfiguration>
